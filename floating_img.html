@@ -1,0 +1,169 @@
+<html>
+<head>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-image: url(logo/deadpool_background03.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        .logo{
+            width: 88%;
+            margin: 10px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+        .logo img{
+            width:10%;
+            border: 1px solid black;
+            border-radius: 50px;
+           
+        }
+        .logo input[type="button"]{
+            width: 10%;
+            height: 10vh;
+            margin: 40px 0px;
+            border: 2px solid white;
+            border-radius: 50px;
+            color: white;
+            font-size: 20;
+            font-weight: 700;
+            background: transparent;
+            outline: none;
+            cursor: pointer;
+        }
+        .logo input[type="button"]:hover{
+            background-color: indianred;
+        }
+        .images{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            bottom: -70px;
+        }
+        .images img{
+            border: 2px solid red;
+            border-radius: 50px;
+            animation: deadpool 7s linear infinite;
+        }
+        @keyframes deadpool{
+            0%{
+                transform: translateY(0);
+                opacity: 0;
+            }
+             40%{
+                opacity: 1;
+            }
+             70%{
+                opacity: 1;
+            }
+             100%{
+                transform: translateY(-80vh);
+                opacity: 0;
+            }
+        }
+        .images img:nth-child(1){
+            animation-delay: 1s;
+            width: 20px;
+        }
+        .images img:nth-child(2){
+            animation-delay: 4s;
+            width: 40px;
+        }
+        .images img:nth-child(3){
+            animation-delay: 7s;
+            width: 50px;
+        }
+        .images img:nth-child(4){
+            animation-delay: 2s;
+            width: 70px;
+        }
+        .images img:nth-child(5){
+            animation-delay: 6s;
+            width: 50px;
+        }
+        .images img:nth-child(6){
+            animation-delay: 2s;
+            width: 30px;
+        }
+        .images img:nth-child(7){
+            animation-delay: 3s;
+            width:  80px;
+        }
+        footer{
+            width: 100px;
+            height: 100vh;
+            background-color: white;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        footer .rockbottom {
+        margin: 0px 10px;
+            padding-bottom: 10px;
+            position: absolute;
+            bottom: 0;            
+        }
+        footer .rockbottom a{
+            text-decoration: none;
+        }
+        footer .rockbottom img{
+            margin: 0px 20px;
+            border-radius: 10px;
+            transform: scale(.8);
+            filter: invert(1);
+        }
+        footer img{
+            margin: 10px 25px;
+            cursor: pointer;
+        }
+        .menu_content{
+            font-family: none;
+            font-weight: 900;
+            font-size: 17;
+            padding-left: 10px;
+            padding-right: 15px;
+            text-align: center;
+        }
+        .menu_content a{
+            text-decoration: none;
+            color: black;
+/*            padding: 0px 30px;*/
+        }
+    </style>
+    </head>
+<body>
+    <div class="logo">
+        <img src="logo/deadpool_background05.jpg"><input type="button" value="Sign up">
+    </div>
+ <div class="images">
+        <img src="logo/deadpool.jpg" width="10%;">
+        <img src="logo/deadpool.jpg" width="10%;">
+        <img src="logo/deadpool.jpg" width="10%;">
+        <img src="logo/deadpool.jpg" width="10%;">
+        <img src="logo/deadpool.jpg" width="10%;">
+        <img src="logo/deadpool.jpg" width="10%;"></div>
+    <footer>
+        <img src="logo/menu_logo.png" width="40px;">
+        <div class="menu_content">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="rockbottom">
+            <a href="#"><img src="logo/facebook_logo.png" width="40px;"></a>
+            <a href="#"><img src="logo/snap.png" width="40px;"></a>
+            <a href="#"><img src="logo/insta.png" width="40px;"></a>
+            <a href="#"><img src="logo/pinterest.png" width="40px;"></a>
+            <a href="#"><img src="logo/twitter_logo.png" width="40px;"></a></div>
+        
+    </footer>
+    </body>
+</html>
